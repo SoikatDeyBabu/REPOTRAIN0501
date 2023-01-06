@@ -102,38 +102,118 @@ nav ul {
 main {
     margin: 100px 350px;
     max-width: 1140px;
-    height: 250px;
+    /* height: 250px; */
     border-radius: 10px;
 }
 
-.about{
-    margin-top: 50px;
+.about {
+    margin-top: 100px;
     background: #FFF8F3;
     border-radius: 10px;
     padding: 70px 70px;
 }
 
-.sectionhead{
+.sectionhead {
     font-weight: 700;
-font-size: 25px;
-color: #181818;
-margin-bottom: 30px;
-text-align: center;
+    font-size: 25px;
+    color: #181818;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.sectiondescription{
+.sectiondescription {
     font-weight: 400;
-font-size: 12px;
-color: #757575;
-margin-bottom: 30px;
-text-align: center;
+    font-size: 12px;
+    color: #757575;
+    margin-bottom: 30px;
+    text-align: center;
 }
-.sectionfoot{
+
+.sectionfoot {
     display: flex;
     list-style: none;
     font-weight: 400;
-font-size: 12px;
-color: #757575;
-text-align: center;
-justify-content: space-around;
+    font-size: 12px;
+    color: #757575;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.what {
+    margin-top: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.whatdescription {
+    font-weight: 400;
+    font-size: 12px;
+    color: #757575;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skillscontainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.skills {
+    width: 267px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 10px 8px 8px 10px;
+}
+
+.skilltitle {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.skilldescip {
+    font-weight: 400;
+    font-size: 12px;
+    color: #757575;
+    margin-bottom: 10px;
+}
+
+.resume{
+    margin-top: 100px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.eduexp{
+    display: flex;
+    gap: 75px;
+    margin-bottom: 50px;
+}
+
+.myedu{
+    font-weight: 700;
+font-size: 22px;
+color: #474747;
+margin-bottom: 30px;
+}
+
+.master-h5{
+    margin-top: 10px;
+    font-weight: 700;
+font-size: 18px;
+color: #474747;
+margin-bottom: 10px;
+}
+
+.master-h6{
+font-weight: 700;
+font-size: 15px;
+color: #474747;
+margin-bottom: 20px;
 }
