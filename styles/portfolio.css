@@ -60,6 +60,7 @@ nav ul {
 .banner {
     display: flex;
     margin: 0 200px;
+    justify-content: space-between;
     align-items: center;
 }
 
