@@ -1,10 +1,11 @@
 * {
     font-family: 'Open Sans', sans-serif;
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 /* Navigation and header styles */
 .nav-title {
+    display: flex;
     font-weight: 800;
     font-size: 45px;
 }
@@ -18,17 +19,18 @@
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 5px 200px;
+    /* margin: 5px 200px; */
 }
 
 /* . dur korte */
 nav li {
     list-style: none;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 /* portfolio blog hire ke 1 line ante */
 nav ul {
+    gap: 10px;
     display: flex;
     align-items: center;
 }
@@ -41,7 +43,7 @@ nav ul {
     font-weight: 500;
     font-size: 15px;
     border: 0;
-    padding: 18px 18px;
+    /* padding: 18px 18px; */
     border-radius: 5px;
     color: white;
     background-color: #FD6E0A;
@@ -50,19 +52,20 @@ nav ul {
 /* background image set */
 .header {
     background-color: #FFF8F3;
-    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-image: url('../images/header_bg.png'); url('../images/developer.png'); 
     background-repeat: no-repeat;
     background-position: bottom right, left;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
 /* header banner styles */
 .banner {
     display: flex;
-    margin: 0 200px;
+    /* margin: 0; */
     justify-content: space-between;
     align-items: center;
 }
+
 
 /* banner text settings */
 .banner-text-h3 {
@@ -93,25 +96,22 @@ nav ul {
     font-weight: 500;
     font-size: 15px;
     border: 1px solid #FD6E0A;
-    padding: 18px 25px;
+    /* padding: 18px 25px; */
     border-radius: 5px;
     color: #FD6E0A;
 }
 
 /* about me table */
 
-main {
-    margin: 100px 350px;
-    max-width: 1140px;
-    /* height: 250px; */
-    border-radius: 10px;
+.main {
+    margin: 0 auto;
 }
 
 .about {
-    margin-top: 100px;
+    margin: 100 auto;
     background: #FFF8F3;
     border-radius: 10px;
-    padding: 70px 70px;
+    /* padding: 70px 70px; */
 }
 
 .sectionhead {
@@ -142,7 +142,7 @@ main {
 
 .what {
     margin-top: 100px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     text-align: center;
 }
 
@@ -152,12 +152,11 @@ main {
     color: #757575;
     margin-top: 30px;
     margin-bottom: 30px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .skillscontainer {
     display: flex;
-    justify-content: space-around;
     gap: 24px;
 }
 
@@ -222,21 +221,23 @@ margin-bottom: 20px;
     display: flex;
     gap: 117px;
     background: #FFF8F3;
-    margin: 5px 2px;
+    margin: 5px;
 }
 .mycontact{
     margin-top: 100px;
-    margin-left:350px;
+    /* margin-left:350px; */
     margin-bottom: 20px;
 }
 .contact-details{
-    margin-left:350px;
+    /* margin-left:350px; */
     font-weight: 400;
 font-size: 13px;
 color: #474747;
 margin-bottom: 10px;
 }
 .mymessage{
+    display: flex;
+    flex-direction: column;
     margin-top: 100px;
     margin-left:0px;
     margin-bottom: 28px;
@@ -247,7 +248,7 @@ margin-bottom: 10px;
     border: 0;
     width: 300px;
     height: 20px;
-    padding: 18px 30px;
+    /* padding: 18px 30px; */
 }
 
 .myform textarea{
@@ -255,5 +256,41 @@ margin-bottom: 10px;
     width: 300px;
     border: 0;
     height: 130px;
-    padding: 18px 30px;
+    /* padding: 18px 30px; */
+}
+
+@media screen and (max-width:576px) {
+    .banner img{
+        width: 70%;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .nav-title, .skillscontainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .eduexp{
+        flex-direction: column;
+    }
+    .sectionfoot{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contactme{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .skills {
+    width: 95%;
+    }
+}
+
+.hide{
+    display: none;
 }
